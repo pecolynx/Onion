@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET           /                            controllers.IndexController.index
+POST          /auth/register               controllers.AuthController.register
+POST          /auth/authenticate           controllers.AuthController.authenticate
+
+POST          /document/file/search        controllers.DocumentFileController.file_search
+POST          /document/file/list          controllers.DocumentFileController.file_list
+DELETE        /document/file/clear         controllers.DocumentFileController.file_clear
+
+GET           /document/file/:id           controllers.DocumentFileController.file_get(id:String)
+POST          /document/file               controllers.DocumentFileController.file_add
+DELETE        /document/file/:id           controllers.DocumentFileController.file_remove(id:String)
+PUT           /document/file/:id           controllers.DocumentFileController.file_update(id:String)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file                controllers.Assets.at(path="/public", file)
+
+    

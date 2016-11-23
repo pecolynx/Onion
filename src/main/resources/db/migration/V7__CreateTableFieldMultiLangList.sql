@@ -1,0 +1,11 @@
+CREATE TABLE field_multi_lang_list (
+id INT AUTO_INCREMENT
+,version INT NOT NULL DEFAULT 1
+,created_at TIMESTAMP NOT NULL DEFAULT NOW()
+,updated_at TIMESTAMP NOT NULL
+,core_id INT NOT NULL
+,lang_id INT REFERENCES lang_list(id)
+,name VARCHAR(64) NOT NULL
+,PRIMARY KEY(id)
+,FOREIGN KEY(core_id) REFERENCES field_core_list(id) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB;

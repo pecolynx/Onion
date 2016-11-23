@@ -1,0 +1,12 @@
+CREATE TABLE app_user_list (
+id INT AUTO_INCREMENT
+,version INT NOT NULL DEFAULT 1
+,created_at TIMESTAMP NOT NULL DEFAULT NOW()
+,updated_at TIMESTAMP NOT NULL
+,login_id VARCHAR(32) NOT NULL
+,login_password VARCHAR(80) NOT NULL
+,email VARCHAR(40) NOT NULL
+,name VARCHAR(64) NOT NULL
+,PRIMARY KEY(id)
+,UNIQUE(login_id)
+) ENGINE=InnoDB;
