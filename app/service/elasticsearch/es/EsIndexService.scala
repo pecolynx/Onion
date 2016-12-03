@@ -1,18 +1,19 @@
 package service.elasticsearch.es
 
+import com.kujilabo.service.RestClient
+import com.kujilabo.util.HttpClientUtils
 import models.elasticsearch.es.EsIndex
 import models.exceptions.ModelNotFoundException
 import models.elasticsearch.{ElasticSearchIndexSetting, IndexName}
 import org.springframework.http.HttpStatus
 import org.springframework.web.client.HttpClientErrorException
-import service.{HttpClientUtils, RestClient}
 
 object EsIndexService {
   def containsIndex(esUrl: String, indexName: IndexName): Boolean = {
     val url = esUrl + "/" + indexName
     try {
       val response = RestClient.head(url)
-      if (response.getStatusCode() == HttpStatus.OK) {
+      if (HttpClientUtils.isOk(response)) {
         println(" contains")
         return true
       }

@@ -6,11 +6,11 @@ import com.typesafe.scalalogging.LazyLogging
 import models.exceptions.ModelNotFoundException
 import com.kujilabo.common._
 import com.kujilabo.models.core._
+import com.kujilabo.service.RestClient
 import models.elasticsearch.es._
 import models.elasticsearch.{IndexName, MappingName}
 import org.springframework.http.{HttpStatus, ResponseEntity}
 import org.springframework.web.client.HttpClientErrorException
-import service.RestClient
 import utils.JsonUtils
 
 object EsMappingService extends LazyLogging {

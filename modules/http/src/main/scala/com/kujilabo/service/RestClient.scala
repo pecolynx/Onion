@@ -1,4 +1,4 @@
-package service
+package com.kujilabo.service
 
 import org.springframework.http.{HttpEntity, HttpHeaders, HttpMethod, ResponseEntity}
 import org.springframework.web.client.RestTemplate

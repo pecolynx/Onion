@@ -1,5 +1,6 @@
 package service.elasticsearch
 
+import com.kujilabo.service.RestClient
 import com.typesafe.scalalogging.LazyLogging
 import models.core.Page
 import models.elasticsearch.{EsSearchResponse, _}
@@ -9,7 +10,6 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress
 import org.elasticsearch.index.query.MatchQueryBuilder.Operator
 import org.elasticsearch.index.query._
 import org.elasticsearch.search.sort.SortBuilders
-import service.RestClient
 import service.elasticsearch.es.EsMappingService
 import utils.JsonUtils
 
