@@ -1,6 +1,6 @@
-package models.core
+package com.kujilabo.models.core
 
-import config.Constants
+import com.kujilabo.common.CommonConstants
 import org.joda.time.DateTime
 
 /**
@@ -25,8 +25,8 @@ class AppModelT[T]
     */
   def this() = {
     this(
-      Constants.DEFAULT_ID,
-      Constants.DEFAULT_VERSION,
+      CommonConstants.DEFAULT_ID,
+      CommonConstants.DEFAULT_VERSION,
       new DateTime(),
       new DateTime()
     )

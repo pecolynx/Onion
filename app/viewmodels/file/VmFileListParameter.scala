@@ -1,6 +1,6 @@
 package viewmodels.file
 
-import models.core.BaseObject
+import com.kujilabo.models.core._
 import viewmodels.VmCheckAuthParameter
 
 class VmFileListParameter

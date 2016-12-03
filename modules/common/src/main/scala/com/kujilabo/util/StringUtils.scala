@@ -1,4 +1,4 @@
-package utils
+package com.kujilabo.util
 
 /**
   * 文字列ユーティリティ。

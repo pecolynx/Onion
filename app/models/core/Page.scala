@@ -3,6 +3,7 @@ package models.core
 import javax.validation.constraints.{Max, Min}
 
 import scala.annotation.meta.field
+import com.kujilabo.models.core._
 
 /**
   * ページ。

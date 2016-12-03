@@ -1,8 +1,9 @@
 package models.elasticsearch
 
 import config.Constants
-import models.core.{AppModelT, ModelIdImplT, ModelIdT, VariableName}
 import org.joda.time.DateTime
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 
 class Tag
 (
@@ -17,7 +18,8 @@ class Tag
 
   def this(name: VariableName, multiLangName: String) = {
     this(
-      Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+      CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       name,
       multiLangName
     )

@@ -3,7 +3,7 @@ package viewmodels.file
 import javax.validation.constraints.{Max, Min, Size}
 
 import config.Constants
-import models.core.BaseObject
+import com.kujilabo.models.core._
 
 import scala.annotation.meta.field
 

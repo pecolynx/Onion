@@ -1,6 +1,7 @@
 package models
 
-import models.core.{AppUser, AppUserBuilder, ModelIdImplT, Page}
+import com.kujilabo.models.core.ModelIdImplT
+import models.core.{AppUser, AppUserBuilder, Page}
 import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import org.scalatest._

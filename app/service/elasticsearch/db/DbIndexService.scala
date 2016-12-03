@@ -1,14 +1,16 @@
 package service.elasticsearch.db
 
-import models.core.{ModelIdImplT, ModelIdT, Page, VariableName}
 import models.elasticsearch.IndexName
 import models.elasticsearch.db.DbIndex
 import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import scalikejdbc._
-
 import scala.util.Try
-
+import com.kujilabo.models.core.AppModelT
+import com.kujilabo.models.core.ModelIdT
+import com.kujilabo.models.core._
+import com.kujilabo.common._
+import models.core._
 
 object DbIndexService extends SQLSyntaxSupport[DbIndex] {
   override val tableName = "index_list"

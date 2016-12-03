@@ -3,11 +3,12 @@ package service
 import com.google.inject.Inject
 import com.typesafe.scalalogging.LazyLogging
 import models.AppSettings
-import models.core.{AppUser, AppUserAuthToken, ModelIdImplT, ModelIdT}
 import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import scalikejdbc._
 import services.AppUserService._
+import com.kujilabo.models.core._
+import models.core._
 
 import scala.util.Try
 

@@ -3,10 +3,11 @@ package models.elasticsearch.db
 import javax.validation.constraints.Size
 
 import config.Constants
-import models.core.{AppModelT, ModelIdImplT, ModelIdT, VariableName}
 import org.hibernate.validator.constraints.NotEmpty
 import org.joda.time.DateTime
 import utils.JsonUtils
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 
 import scala.annotation.meta.field
 
@@ -35,7 +36,8 @@ class DbField
     name: VariableName, fieldType: Int, seq: Int, mappingId: ModelIdT[Int],
     multiLangName: String) = {
     this(
-      Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+      CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       name,
       fieldType,
       seq,

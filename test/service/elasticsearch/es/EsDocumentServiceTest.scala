@@ -1,13 +1,15 @@
 package service.elasticsearch.es
 
+import com.kujilabo.common.CommonException
+import com.kujilabo.models.core.{ModelIdImplT, VariableName}
 import com.typesafe.scalalogging.LazyLogging
-import models.core.{ModelIdImplT, Title, VariableName}
+import models.core.Title
 import models.elasticsearch.{IndexName, MappingName}
 import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji
 import models.elasticsearch.es.EsFieldFormat.EsFieldFormatNone
 import models.elasticsearch.es.EsFieldType.EsFieldTypeString
 import models.elasticsearch.es._
-import models.exceptions.{CommonException, ModelNotFoundException}
+import models.exceptions.ModelNotFoundException
 import org.scalatest._
 
 class EsDocumentServiceTest extends FunSpec with BeforeAndAfter with ShouldMatchers {

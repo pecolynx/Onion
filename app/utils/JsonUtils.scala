@@ -11,10 +11,8 @@ import com.fasterxml.jackson.module.scala.DefaultScalaModule
 object JsonUtils {
   def toJson(obj: AnyRef): String = {
     val mapper = new ObjectMapper()
-    //mapper.registerModule(new JodaModule)
     mapper.registerModule(DefaultScalaModule)
 
-    //mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm a z"))
     mapper.configure(com.fasterxml.jackson.databind.SerializationFeature.
       WRITE_DATES_AS_TIMESTAMPS, false)
     mapper.writeValueAsString(obj)

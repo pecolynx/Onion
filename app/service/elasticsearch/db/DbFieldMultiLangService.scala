@@ -1,6 +1,7 @@
 package service.elasticsearch.db
 
-import models.core.ModelIdImplT
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 import models.elasticsearch.db.DbFieldMultiLang
 import scalikejdbc._
 

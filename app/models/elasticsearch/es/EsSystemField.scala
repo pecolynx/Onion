@@ -1,10 +1,12 @@
 package models.elasticsearch.es
 
-import models.core.VariableName
+import com.kujilabo.models.core._
 import models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
 import models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}
 import models.elasticsearch.es.EsFieldType.{EsFieldTypeDate, EsFieldTypeInteger, EsFieldTypeString}
 
+
+import com.kujilabo.models.core._
 
 object EsSystemField {
 

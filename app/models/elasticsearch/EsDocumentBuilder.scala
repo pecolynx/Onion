@@ -2,7 +2,8 @@ package models.elasticsearch
 
 import com.typesafe.scalalogging.LazyLogging
 import config.Constants
-import models.core.{ModelIdImplT, Title, VariableName}
+import models.core._
+import com.kujilabo.models.core._
 import models.elasticsearch.es.{EsDocumentFieldString, _}
 import org.elasticsearch.action.search.SearchResponse
 import org.elasticsearch.search.highlight.HighlightField

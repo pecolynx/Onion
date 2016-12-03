@@ -1,7 +1,8 @@
 package models.elasticsearch.db
 
 import config.Constants
-import models.core.{AppModelT, ModelIdImplT, ModelIdT}
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 import org.hibernate.validator.constraints.NotEmpty
 import org.joda.time.DateTime
 import utils.JsonUtils
@@ -42,7 +43,8 @@ class DbFieldMultiLang
     */
   def this(coreId: ModelIdT[Int], langId: ModelIdT[Int], name: String) = {
     this(
-      Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+      CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       coreId,
       langId,
       name

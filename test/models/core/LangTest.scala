@@ -1,6 +1,6 @@
 package models.core
 
-import models.exceptions.ModelValidationException
+import com.kujilabo.validation.ModelValidationException
 import org.scalatest._
 
 class LangTest extends FunSpec with ShouldMatchers {

@@ -1,6 +1,6 @@
 package models.elasticsearch.es
 
-import models.core.VariableName
+import com.kujilabo.models.core._
 import models.elasticsearch.es.EsFieldType.EsFieldTypeString
 import viewmodels.VmDocumentField
 

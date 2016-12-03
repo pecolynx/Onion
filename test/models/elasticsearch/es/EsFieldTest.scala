@@ -1,6 +1,6 @@
 package models.elasticsearch.es
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerNone
 import models.elasticsearch.es.EsFieldFormat.EsFieldFormatNone
 import models.elasticsearch.es.EsFieldType.EsFieldTypeInteger

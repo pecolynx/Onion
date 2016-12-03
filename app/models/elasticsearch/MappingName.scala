@@ -1,6 +1,6 @@
 package models.elasticsearch
 
-import models.core.{BaseObject, VariableName}
+import com.kujilabo.models.core.{BaseObject, VariableName}
 import validators.VariableNameSize
 
 import scala.annotation.meta.field

@@ -1,6 +1,7 @@
 package service.elasticsearch.db
 
-import models.core.{ModelIdImplT, Page, VariableName}
+import com.kujilabo.models.core.{ModelIdImplT, VariableName}
+import models.core.{Page}
 import models.elasticsearch.IndexName
 import models.elasticsearch.db.DbIndex
 import models.elasticsearch.db.DbIndexBuilder

@@ -1,5 +1,6 @@
 package models.core
 
+import com.kujilabo.models.core.ModelIdImplT
 import org.scalatest._
 
 class ModelIdImplTTest extends FunSpec with BeforeAndAfter with ShouldMatchers {

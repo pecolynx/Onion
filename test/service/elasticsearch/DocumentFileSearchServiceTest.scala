@@ -1,6 +1,7 @@
 package service.elasticsearch
 
-import models.core.{Page, Title, VariableName}
+import com.kujilabo.models.core.VariableName
+import models.core.{Page, Title}
 import models.elasticsearch.db.DbFieldType.DbFieldTypeText
 import models.elasticsearch.es.{EsDocument, EsDocumentFieldList, EsDocumentFieldString}
 import models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}

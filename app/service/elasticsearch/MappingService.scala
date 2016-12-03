@@ -2,7 +2,8 @@ package service.elasticsearch
 
 import com.typesafe.scalalogging.LazyLogging
 import config.Constants
-import models.core.ModelIdImplT
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 import models.elasticsearch.db.{DbField, DbMapping}
 import models.elasticsearch.es.{EsField, EsFieldList, EsMapping}
 import models.elasticsearch.{FieldList, Index, IndexName, Mapping, MappingName}

@@ -1,9 +1,9 @@
 package models.elasticsearch
 
-import models.core.{BaseObject, VariableName}
 import validators.VariableNameSize
-
 import scala.annotation.meta.field
+import com.kujilabo.models.core.BaseObject
+import com.kujilabo.models.core.VariableName
 
 /**
   * インデックス名クラス。

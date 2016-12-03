@@ -1,10 +1,11 @@
 package models.elasticsearch.db
 
 import config.Constants
-import models.core.{AppModelT, ModelIdImplT, ModelIdT}
 import models.elasticsearch.IndexName
 import org.joda.time.DateTime
 import utils.JsonUtils
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 class DbIndex
 (
@@ -18,7 +19,8 @@ class DbIndex
   this.validate
 
   def this(name: IndexName) = {
-    this(Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+    this(CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       name
     )
   }

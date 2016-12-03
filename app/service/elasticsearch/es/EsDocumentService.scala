@@ -3,7 +3,7 @@ package service.elasticsearch.es
 import com.typesafe.scalalogging.LazyLogging
 import models.exceptions.{DocumentNotFoundException, ModelNotFoundException}
 import models._
-import models.core.ModelIdT
+import com.kujilabo.models.core._
 import models.elasticsearch._
 import models.elasticsearch.es.{EsDocument, EsDocumentBuilder, EsDocumentFieldFactory}
 import org.springframework.http.HttpStatus

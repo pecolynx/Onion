@@ -2,7 +2,8 @@ package viewmodels
 
 import javax.validation.constraints.Min
 
-import models.core.{BaseObject, ModelIdT, Title}
+import models.core._
+import com.kujilabo.models.core._
 import models.elasticsearch.es.EsDocumentFieldList
 import models.elasticsearch.{IndexName, MappingName}
 import org.joda.time.DateTime

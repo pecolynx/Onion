@@ -1,13 +1,15 @@
 package controllers
 
 import com.typesafe.scalalogging.LazyLogging
-import models.core.{AppUser, AppUserAuthToken, ModelIdT}
 import models.elasticsearch.es.EsDocument
 import models.exceptions._
 import play.api.mvc.{AnyContent, Controller, Request, Result}
 import service.AppUserAuthTokenService
 import services.AppUserService
 import utils.JsonUtils
+import models.core._
+import com.kujilabo.models.core._
+import models.core._
 
 /**
   * 基底コントローラ。

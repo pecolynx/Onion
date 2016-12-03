@@ -1,6 +1,6 @@
 package service.elasticsearch.es
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 import models.elasticsearch.IndexName
 import models.exceptions.ModelNotFoundException
 import org.scalatest._

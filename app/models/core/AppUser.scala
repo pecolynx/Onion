@@ -1,11 +1,11 @@
 package models.core
 
 import javax.validation.constraints.Size
-
 import config.Constants
 import org.joda.time.DateTime
-
 import scala.annotation.meta.field
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 /**
   * アプリケーションユーザー。
@@ -48,7 +48,8 @@ class AppUser
     */
   def this(loginId: String, loginPassword: String, email: String, name: String) = {
     this(
-      Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+      CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       loginId,
       loginPassword,
       email,

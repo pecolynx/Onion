@@ -2,8 +2,12 @@ name := "onion"
 
 version := "1.0"
 
+lazy val common = (project in file("modules/common"))
 
-lazy val `onion` = (project in file(".")).enablePlugins(PlayScala)
+lazy val `onion` = (project in file("."))
+  .enablePlugins(PlayScala)
+  .aggregate(common)
+  .dependsOn(common)
 
 scalaVersion := "2.11.7"
 
@@ -12,6 +16,8 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-Xlint"
 //assemblyOutputPath in assembly := file("./akka-http-standalone.jar")
 
 libraryDependencies ++= Seq(jdbc, cache, ws)
+
+//libraryDependencies += "comon" % "common" % "1.0"
 
 libraryDependencies ++= Seq(
   "net.databinder.dispatch" %% "dispatch-core" % "0.11.0",

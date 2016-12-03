@@ -1,6 +1,6 @@
 package models.elasticsearch
 
-import models.core.ModelIdT
+import com.kujilabo.models.core._
 
 case class ResponseOfDocumentAdd
 (

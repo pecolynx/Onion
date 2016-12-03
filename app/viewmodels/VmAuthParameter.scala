@@ -1,6 +1,6 @@
 package viewmodels
 
-import models.core.BaseObject
+import com.kujilabo.models.core._
 
 /**
   * 認証クラス。

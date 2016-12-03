@@ -3,13 +3,15 @@ package models.elasticsearch.es
 import javax.validation.constraints.Min
 
 import config.Constants
-import models.core.{BaseObject, ModelIdImplT, ModelIdT, Title}
+import models.core._
 import models.elasticsearch.{IndexName, MappingName}
 import org.joda.time.{DateTime, DateTimeZone}
 import org.joda.time.format.{DateTimeFormat, ISODateTimeFormat}
 import viewmodels.VmDocument
 
 import scala.annotation.meta.field
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 /**
   * ElasticSearchドキュメント。
@@ -46,7 +48,7 @@ class EsDocument
            createdBy: Int,
            documentFieldList: EsDocumentFieldList) = {
     this(
-      Constants.DEFAULT_ID_STRING, Constants.DEFAULT_VERSION,
+      CommonConstants.DEFAULT_ID_STRING, CommonConstants.DEFAULT_VERSION,
       new DateTime(), new DateTime(),
       indexName, mappingName,
       title, createdBy, documentFieldList

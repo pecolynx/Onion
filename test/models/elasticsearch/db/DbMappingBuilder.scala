@@ -1,6 +1,6 @@
 package models.elasticsearch.db
 
-import models.core.{ModelIdImplT, ModelIdT, VariableName}
+import com.kujilabo.models.core.{ModelIdImplT, ModelIdT, VariableName}
 import models.elasticsearch.MappingName
 
 class DbMappingBuilder {

@@ -1,7 +1,8 @@
 package service.elasticsearch.db
 
 import com.typesafe.scalalogging.LazyLogging
-import models.core.{ModelIdImplT, ModelIdT, Page, VariableName}
+import models.core._
+import com.kujilabo.models.core._
 import models.elasticsearch.MappingName
 import models.elasticsearch.db.DbMapping
 import models.exceptions.ModelNotFoundException

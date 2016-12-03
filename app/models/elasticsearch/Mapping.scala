@@ -1,7 +1,8 @@
 package models.elasticsearch
 
 import config.Constants
-import models.core.{BaseObject, ModelIdImplT, ModelIdT}
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 /**
   * マッピング
@@ -28,6 +29,6 @@ class Mapping
     * @param name  マッピング名
     */
   def this(index: Index, name: MappingName) = {
-    this(Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, index, name)
+    this(CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION, index, name)
   }
 }

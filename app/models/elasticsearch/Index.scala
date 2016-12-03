@@ -1,7 +1,8 @@
 package models.elasticsearch
 
 import config.Constants
-import models.core.{ModelIdImplT, ModelIdT}
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 /**
   * インデックス。
@@ -23,6 +24,6 @@ class Index
     * @param name インデックス名
     */
   def this(name: IndexName) = {
-    this(Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, name)
+    this(CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION, name)
   }
 }

@@ -2,7 +2,8 @@ package utils
 
 import com.typesafe.scalalogging.LazyLogging
 import models._
-import models.core.{ModelIdImplT, Title, VariableName}
+import models.core._
+import com.kujilabo.models.core._
 import models.elasticsearch._
 import models.elasticsearch.es.EsSystemField
 import org.joda.time.DateTime

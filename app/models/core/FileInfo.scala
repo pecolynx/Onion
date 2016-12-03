@@ -2,6 +2,8 @@ package models.core
 
 import org.joda.time.DateTime
 
+import com.kujilabo.models.core._
+
 /**
   * ファイル情報。
   *

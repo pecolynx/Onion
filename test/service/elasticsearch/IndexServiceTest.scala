@@ -1,6 +1,7 @@
 package service.elasticsearch
 
-import models.core.{Title, VariableName}
+import com.kujilabo.models.core.VariableName
+import models.core.Title
 import models.elasticsearch.es.EsDocument
 import models.elasticsearch.{Index, IndexName}
 import models.exceptions.ModelAlreadyExistsException

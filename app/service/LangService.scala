@@ -1,6 +1,8 @@
 package service
 
-import models.core.{Lang, ModelIdImplT, Page}
+import models.core._
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 import scalikejdbc.{WrappedResultSet, _}
 
 object LangService extends SQLSyntaxSupport[Lang] {

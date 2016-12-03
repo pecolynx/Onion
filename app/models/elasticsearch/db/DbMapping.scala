@@ -1,10 +1,11 @@
 package models.elasticsearch.db
 
 import config.Constants
-import models.core.{AppModelT, ModelIdImplT, ModelIdT}
+import com.kujilabo.models.core._
 import models.elasticsearch.MappingName
 import org.joda.time.DateTime
 import utils.JsonUtils
+import com.kujilabo.common._
 
 class DbMapping
 (
@@ -19,7 +20,9 @@ class DbMapping
   this.validate
 
   def this(indexId: ModelIdT[Int], name: MappingName) = {
-    this(Constants.DEFAULT_ID, Constants.DEFAULT_VERSION, new DateTime(), new DateTime(),
+    this(
+      CommonConstants.DEFAULT_ID, CommonConstants.DEFAULT_VERSION,
+      new DateTime(), new DateTime(),
       indexId,
       name
     )

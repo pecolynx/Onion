@@ -1,11 +1,12 @@
 package services
 
 import com.typesafe.scalalogging.LazyLogging
-import models.core.{AppUser, ModelIdImplT, ModelIdT, Page}
 import models.exceptions.{AppUserNotFoundException, ModelNotFoundException}
 import org.joda.time.DateTime
 import org.springframework.security.crypto.password.StandardPasswordEncoder
 import scalikejdbc._
+import models.core._
+import com.kujilabo.models.core._
 
 /**
   * アプリケーションユーザーサービス。

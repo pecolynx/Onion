@@ -1,8 +1,8 @@
 package viewmodels.file
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import models.core.BaseObject
-import viewmodels.{VmCheckAuthParameter, VmDocumentFile}
+import com.kujilabo.models.core.BaseObject
+import viewmodels.{VmDocumentFile}
 
 /**
   * ファイル追加パラメータ

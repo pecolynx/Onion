@@ -4,7 +4,8 @@ import java.util.NoSuchElementException
 
 import com.typesafe.scalalogging.LazyLogging
 import models.exceptions.ModelNotFoundException
-import models.core.VariableName
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 import models.elasticsearch.es._
 import models.elasticsearch.{IndexName, MappingName}
 import org.springframework.http.{HttpStatus, ResponseEntity}

@@ -2,7 +2,8 @@ package validators
 
 import javax.validation.{ConstraintValidator, ConstraintValidatorContext}
 
-import models.core.VariableName
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 
 class VariableNameSizeValidator extends ConstraintValidator[VariableNameSize, VariableName] {
 

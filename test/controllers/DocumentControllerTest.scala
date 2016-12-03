@@ -1,9 +1,10 @@
 package controllers
 
 import com.google.inject.{Guice, Injector}
+import com.kujilabo.models.core.VariableName
 import config.{ServiceModule, TestServiceModule}
 import models.AppSettingsTestImpl
-import models.core.{Title, VariableName}
+import models.core.Title
 import models.elasticsearch.db.DbFieldType.DbFieldTypeText
 import models.elasticsearch.es.{EsDocument, EsDocumentFieldList, EsDocumentFieldString}
 import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji

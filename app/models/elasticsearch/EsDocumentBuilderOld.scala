@@ -2,14 +2,17 @@ package models.elasticsearch
 
 import com.typesafe.scalalogging.LazyLogging
 import config.Constants
-import models.core.{ModelIdImplT, Title, VariableName}
+import models.core._
+import com.kujilabo.models.core._
 import models.elasticsearch.es.{EsDocumentFieldEmpty, EsDocumentFieldString, _}
 import org.elasticsearch.action.search.SearchResponse
 import org.elasticsearch.search.{SearchHit, SearchHitField}
 import org.elasticsearch.search.highlight.HighlightField
 import org.joda.time.DateTime
 import service.elasticsearch.es.EsMappingService
-import utils.StringUtils
+
+//import utils.StringUtils
+import com.kujilabo.util.StringUtils
 
 import scala.collection.JavaConversions._
 import collection.JavaConversions._

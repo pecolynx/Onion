@@ -1,4 +1,4 @@
-package models.core
+package com.kujilabo.models.core
 
 /**
   * 変数名。

@@ -1,6 +1,6 @@
 package service.elasticsearch.es
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 import models.elasticsearch.{IndexName, MappingName}
 import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji
 import models.elasticsearch.es.EsFieldFormat.EsFieldFormatNone

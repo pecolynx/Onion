@@ -6,6 +6,8 @@ import models.elasticsearch.{Index, IndexName}
 import models.exceptions.{ModelAlreadyExistsException, ModelNotFoundException}
 import service.elasticsearch.db.DbIndexService
 import service.elasticsearch.es.EsIndexService
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 
 /**
   * インデックスサービス。

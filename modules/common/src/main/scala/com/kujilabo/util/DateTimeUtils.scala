@@ -1,4 +1,4 @@
-package utils
+package com.kujilabo.util
 
 import com.typesafe.scalalogging.LazyLogging
 import org.joda.time.DateTime
@@ -19,22 +19,23 @@ object DateTimeUtils extends LazyLogging {
       Some(formatter.parseDateTime(value))
     } catch {
       case e: Exception => {
-        logger.warn("Failed to convert. value : %s, format : %s".format(value, format))
+        logger.warn("Failed to DateTime. value : <%s>, format : <%s>".format(value, format))
         None
       }
     }
   }
-
-  def createFormatter(format: String): DateTimeFormatter = DateTimeFormat.forPattern(format)
 
   def toDateTime(value: String, formatter: DateTimeFormatter): Option[DateTime] = {
     try {
       Some(formatter.parseDateTime(value))
     } catch {
       case e: Exception => {
+        logger.warn("Failed to DateTime. value : <%s>".format(value))
         logger.warn(value)
         None
       }
     }
   }
+
+  def createFormatter(format: String): DateTimeFormatter = DateTimeFormat.forPattern(format)
 }

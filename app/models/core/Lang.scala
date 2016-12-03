@@ -1,11 +1,11 @@
 package models.core
 
 import javax.validation.constraints.Size
-
 import config.Constants
 import org.hibernate.validator.constraints.NotEmpty
-
 import scala.annotation.meta.field
+import com.kujilabo.models.core._
+import com.kujilabo.common._
 
 /**
   * 言語。
@@ -33,7 +33,7 @@ class Lang
     */
   def this(code: String, name: String) = {
     this(
-      Constants.DEFAULT_ID,
+      CommonConstants.DEFAULT_ID,
       code,
       name
     )

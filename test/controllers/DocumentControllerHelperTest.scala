@@ -1,9 +1,10 @@
 package controllers
 
 import com.google.inject.{Guice, Injector}
+import com.kujilabo.models.core.VariableName
 import config.TestServiceModule
 import models.AppSettingsTestImpl
-import models.core.{AppUser, Page, VariableName}
+import models.core.{AppUser, Page}
 import models.elasticsearch.db.DbFieldType.DbFieldTypeText
 import models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
 import models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}

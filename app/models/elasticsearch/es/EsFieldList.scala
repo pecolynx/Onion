@@ -2,7 +2,7 @@ package models.elasticsearch.es
 
 import com.typesafe.scalalogging.LazyLogging
 import models.exceptions.ModelNotFoundException
-import models.core.VariableName
+import com.kujilabo.models.core._
 import utils.JsonUtils
 
 class EsFieldList(val list: Seq[EsField]) extends LazyLogging {

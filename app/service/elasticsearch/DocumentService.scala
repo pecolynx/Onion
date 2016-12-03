@@ -1,7 +1,7 @@
 package service.elasticsearch
 
 import com.typesafe.scalalogging.LazyLogging
-import models.core.ModelIdT
+import com.kujilabo.models.core._
 import models.elasticsearch.{IndexName, MappingName}
 import models.elasticsearch.es.EsDocument
 import service.elasticsearch.es.EsDocumentService

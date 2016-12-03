@@ -9,6 +9,7 @@ import services.AppUserService._
 
 import scala.util.Try
 
+import com.kujilabo.models.core._
 
 object FileInfoService extends SQLSyntaxSupport[FileInfo] with LazyLogging {
   override val tableName = "file_info_list"

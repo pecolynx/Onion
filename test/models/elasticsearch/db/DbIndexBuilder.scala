@@ -1,6 +1,6 @@
 package models.elasticsearch.db
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 import models.elasticsearch.IndexName
 
 class DbIndexBuilder {

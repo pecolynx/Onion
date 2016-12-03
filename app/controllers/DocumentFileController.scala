@@ -21,6 +21,8 @@ import viewmodelconverters.{VmDocumentConverter, VmFileSearchConditionConverter,
 import viewmodels.file.VmFileSearchParameter
 import viewmodels.{VmCheckAuthParameter, VmDocumentFile, VmSearchResult}
 
+import com.kujilabo.models.core._
+
 /**
   * ドキュメントコントローラ。
   *

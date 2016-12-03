@@ -2,9 +2,8 @@ package controllers
 
 import com.fasterxml.jackson.databind.JsonMappingException
 import models.AppSettings
-import models.core.{BaseObject, FileInfo, ModelIdT}
 import models.elasticsearch.es.{EsDocument, EsDocumentFieldList}
-import models.exceptions.{BadRequestException, CommonException, DocumentNotFoundException, ModelValidationException}
+import models.exceptions.{BadRequestException, DocumentNotFoundException}
 import org.joda.time.DateTime
 import play.api.mvc.{AnyContent, Request}
 import service.FileInfoService
@@ -13,6 +12,10 @@ import utils.JsonUtils
 import viewmodelconverters.VmDocumentConverter
 import viewmodels.file._
 import viewmodels.VmDocumentFile
+import com.kujilabo.validation.ModelValidationException
+import com.kujilabo.models.core._
+import com.kujilabo.common._
+import models.core._
 
 import scala.util.{Failure, Success, Try}
 

@@ -1,11 +1,12 @@
-package models.core
+package com.kujilabo.models.core
 
 import javax.validation.{Configuration, ConstraintViolation, Validation}
 
-import models.exceptions.ModelValidationException
-
+import com.kujilabo.validation.ModelValidationException
+import com.typesafe.scalalogging.LazyLogging
 
 class BaseObject {
+  //  extends LazyLogging {
 
   def validate(): Unit = {
     validate(this)
@@ -13,11 +14,7 @@ class BaseObject {
 
   def validate[T](t: T): Unit = {
     val configuration = Validation.byDefaultProvider.configure
-    val factory =
-      configuration
-        //.messageInterpolator(new MyCustomMessageInterpolator(configuration.getDefaultMessageInterpolator))
-        .asInstanceOf[Configuration[_]]
-        .buildValidatorFactory
+    val factory = configuration.asInstanceOf[Configuration[_]].buildValidatorFactory
 
     val validator = factory.getValidator
 
@@ -31,7 +28,7 @@ class BaseObject {
     val messageList = violations.map(x => x.getPropertyPath + " : " + x.getMessage)
     if (messageList.nonEmpty) {
       val message = messageList.mkString("\n")
-      println(message)
+      //logger.warn(message)
       throw new ModelValidationException(message)
     }
   }

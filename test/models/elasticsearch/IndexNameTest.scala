@@ -1,7 +1,7 @@
 package models.elasticsearch
 
-import models.core.VariableName
-import models.exceptions.ModelValidationException
+import com.kujilabo.models.core.VariableName
+import com.kujilabo.validation.ModelValidationException
 import org.scalatest._
 
 class IndexNameTest extends FunSpec with ShouldMatchers {

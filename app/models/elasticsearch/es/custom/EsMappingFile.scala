@@ -1,6 +1,6 @@
 package models.elasticsearch.es.custom
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 
 object EsMappingFile {
   val FILE_NAME: VariableName = new VariableName("file_name")

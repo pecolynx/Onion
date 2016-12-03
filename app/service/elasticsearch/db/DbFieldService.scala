@@ -1,10 +1,12 @@
 package service.elasticsearch.db
 
-import models.core.{ModelIdImplT, ModelIdT, Page, VariableName}
+import models.core._
 import models.elasticsearch.db.{DbField, DbFieldMultiLang, DbIndex}
 import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import scalikejdbc._
+import com.kujilabo.common._
+import com.kujilabo.models.core._
 
 object DbFieldService extends SQLSyntaxSupport[DbField] {
 

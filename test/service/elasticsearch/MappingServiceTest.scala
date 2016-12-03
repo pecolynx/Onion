@@ -1,6 +1,6 @@
 package service.elasticsearch
 
-import models.core.VariableName
+import com.kujilabo.models.core.VariableName
 import models.elasticsearch._
 import models.elasticsearch.db.DbFieldType.DbFieldTypeText
 import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji
