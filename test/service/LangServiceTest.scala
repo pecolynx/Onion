@@ -1,6 +1,6 @@
 package service
 
-import models.core.Page
+import com.kujilabo.models.core.Page
 import org.scalatest._
 import scalikejdbc.scalatest.AutoRollback
 import org.scalatest.fixture.FunSpec

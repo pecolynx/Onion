@@ -1,9 +1,9 @@
 package service
 
 import com.google.inject.Inject
+import com.kujilabo.common.ModelNotFoundException
 import com.typesafe.scalalogging.LazyLogging
 import models.AppSettings
-import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import scalikejdbc._
 import services.AppUserService._

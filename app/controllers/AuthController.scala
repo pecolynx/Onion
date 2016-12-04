@@ -2,15 +2,15 @@ package controllers
 
 import javax.inject.Inject
 
+import com.kujilabo.util.{JsonUtils, RandomUtils}
 import com.typesafe.scalalogging.LazyLogging
 import models.{AppSettings, DBSettings}
-import models.core.{AppUser, AppUserAuthToken, Page}
+import models.core.{AppUser, AppUserAuthToken}
 import org.joda.time.DateTime
 import org.springframework.security.crypto.password.{PasswordEncoder, StandardPasswordEncoder}
 import play.api.mvc.{Action, AnyContent, Controller, Request}
 import service.{AppUserAuthTokenService, LangService}
 import services.AppUserService
-import utils.{JsonUtils, RandomUtils}
 import viewmodels.{VmAppUserRegisterParameter, VmAuthParameter, VmDocumentFile}
 
 /**

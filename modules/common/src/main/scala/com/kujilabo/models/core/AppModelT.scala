@@ -1,6 +1,6 @@
 package com.kujilabo.models.core
 
-import com.kujilabo.common.CommonConstants
+import com.kujilabo.config.CommonConstants
 import org.joda.time.DateTime
 
 /**

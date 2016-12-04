@@ -2,8 +2,8 @@ package viewmodels
 
 import com.fasterxml.jackson.annotation.{JsonIgnore, JsonIgnoreProperties}
 import com.kujilabo.models.core._
-import models.elasticsearch.es.custom.EsMappingFile
-import models.elasticsearch.es.{EsDocumentFieldDateTime, EsDocumentFieldInteger, EsDocumentFieldList, EsDocumentFieldString}
+import com.kujilabo.models.elasticsearch.es.custom.EsMappingFile
+import com.kujilabo.models.elasticsearch.es.{EsDocumentFieldDateTime, EsDocumentFieldInteger, EsDocumentFieldList, EsDocumentFieldString}
 import org.joda.time.DateTime
 import com.kujilabo.util.DateTimeUtils
 

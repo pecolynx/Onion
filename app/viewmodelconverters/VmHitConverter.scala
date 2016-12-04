@@ -1,6 +1,6 @@
 package viewmodelconverters
 
-import models.elasticsearch.Hit
+import com.kujilabo.models.elasticsearch.Hit
 import viewmodels.VmHit
 
 object VmHitConverter {

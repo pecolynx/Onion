@@ -13,3 +13,7 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.1" % "test"
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.1.7"
 
 libraryDependencies += "javax.validation" % "validation-api" % "1.0.0.GA"
+
+libraryDependencies += "com.fasterxml.jackson.core" % "jackson-core" % "2.5.4"
+
+libraryDependencies += "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.7.5"

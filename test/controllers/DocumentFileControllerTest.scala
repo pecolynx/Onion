@@ -1,17 +1,17 @@
 package controllers
 
 import com.kujilabo.models.core.{ModelIdImplT, ModelIdT, VariableName}
+import com.kujilabo.models.elasticsearch.es.{EsDocument, EsDocumentField, EsDocumentFieldList}
+import com.kujilabo.models.elasticsearch.{IndexName, MappingName, Title}
+import com.kujilabo.util.JsonUtils
 import models.AppSettingsImpl
 import models.core._
-import models.elasticsearch.{IndexName, MappingName}
-import models.elasticsearch.es.{EsDocument, EsDocumentField, EsDocumentFieldList}
 import org.joda.time.DateTime
 import org.scalatest._
 import play.api.http.HeaderNames
 import play.api.libs.json.Json
 import play.api.test.FakeRequest
 import play.api.test.Helpers._
-import utils.JsonUtils
 import viewmodels._
 import org.mockito.Matchers._
 import org.mockito.Mockito._

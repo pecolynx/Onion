@@ -6,22 +6,20 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.typesafe.scalalogging.LazyLogging
 import models.core._
-import models.elasticsearch.{FileSearchCondition, SearchResult}
-import models.elasticsearch.es.EsDocument
-import models.exceptions.{AppUserNotFoundException, BadRequestException, DocumentNotFoundException, ModelNotFoundException}
+import models.exceptions.{AppUserNotFoundException, BadRequestException, DocumentNotFoundException}
 import models.{AppSettings, DBSettings}
 import org.springframework.web.client.HttpClientErrorException
 import play.api.mvc._
-import service.elasticsearch.{DocumentFileSearchService, DocumentService}
-import service.elasticsearch.es.EsDocumentService
 import service.{AppUserAuthTokenService, FileInfoService, LangService}
 import services.AppUserService
-import utils.JsonUtils
 import viewmodelconverters.{VmDocumentConverter, VmFileSearchConditionConverter, VmSearchResultConverter}
 import viewmodels.file.VmFileSearchParameter
 import viewmodels.{VmCheckAuthParameter, VmDocumentFile, VmSearchResult}
-
 import com.kujilabo.models.core._
+import com.kujilabo.models.elasticsearch.{FileSearchCondition, SearchResult}
+import com.kujilabo.models.elasticsearch.es.EsDocument
+import com.kujilabo.service.elasticsearch.{DocumentFileSearchService, DocumentService}
+import com.kujilabo.util.JsonUtils
 
 /**
   * ドキュメントコントローラ。

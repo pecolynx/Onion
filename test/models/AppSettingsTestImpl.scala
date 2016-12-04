@@ -1,7 +1,7 @@
 package models
 
 import com.kujilabo.models.core.VariableName
-import models.elasticsearch.{IndexName, MappingName}
+import com.kujilabo.models.elasticsearch.{IndexName, MappingName}
 
 class AppSettingsTestImpl extends AppSettings {
   override def esUrl(): String = "http://192.168.56.20:9200"

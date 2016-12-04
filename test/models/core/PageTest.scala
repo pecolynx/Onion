@@ -1,5 +1,6 @@
 package models.core
 
+import com.kujilabo.models.core.Page
 import com.kujilabo.validation.ModelValidationException
 import org.scalatest._
 

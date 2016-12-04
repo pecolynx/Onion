@@ -1,7 +1,6 @@
 package sample
 
 import org.scalatest.{FunSpec, ShouldMatchers}
-import utils.ResponseUtil
 
 import scala.util.{Failure, Success, Try}
 

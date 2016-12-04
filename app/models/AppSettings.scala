@@ -1,7 +1,7 @@
 package models
 
 import com.kujilabo.models.core.VariableName
-import models.elasticsearch.{IndexName, MappingName}
+import com.kujilabo.models.elasticsearch.{IndexName, MappingName}
 
 /**
   * アプリケーション設定。

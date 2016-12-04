@@ -1,7 +1,7 @@
 package services
 
 import com.typesafe.scalalogging.LazyLogging
-import models.exceptions.{AppUserNotFoundException, ModelNotFoundException}
+import models.exceptions.{AppUserNotFoundException}
 import org.joda.time.DateTime
 import org.springframework.security.crypto.password.StandardPasswordEncoder
 import scalikejdbc._

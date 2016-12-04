@@ -1,11 +1,14 @@
 package models.core
 
 import javax.validation.constraints.Size
+
 import config.Constants
 import org.hibernate.validator.constraints.NotEmpty
+
 import scala.annotation.meta.field
 import com.kujilabo.models.core._
 import com.kujilabo.common._
+import com.kujilabo.config.CommonConstants
 
 /**
   * 言語。

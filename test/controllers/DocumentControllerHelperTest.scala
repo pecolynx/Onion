@@ -1,23 +1,23 @@
 package controllers
 
 import com.google.inject.{Guice, Injector}
-import com.kujilabo.models.core.VariableName
+import com.kujilabo.models.core.{Page, VariableName}
+import com.kujilabo.models.elasticsearch._
+import com.kujilabo.models.elasticsearch.db.DbFieldType.DbFieldTypeText
+import com.kujilabo.models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
+import com.kujilabo.models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}
+import com.kujilabo.models.elasticsearch.es.EsFieldType.{EsFieldTypeDate, EsFieldTypeInteger, EsFieldTypeString}
+import com.kujilabo.models.elasticsearch.es.custom.EsMappingFile
+import com.kujilabo.service.elasticsearch.db.DbIndexService
+import com.kujilabo.service.elasticsearch.es.EsIndexService
+import com.kujilabo.service.elasticsearch.{IndexService, MappingService}
 import config.TestServiceModule
 import models.AppSettingsTestImpl
-import models.core.{AppUser, Page}
-import models.elasticsearch.db.DbFieldType.DbFieldTypeText
-import models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
-import models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}
-import models.elasticsearch.es.EsFieldType.{EsFieldTypeDate, EsFieldTypeInteger, EsFieldTypeString}
-import models.elasticsearch.es.custom.EsMappingFile
-import models.elasticsearch.{Field, _}
+import models.core.AppUser
 import org.joda.time.DateTime
 import org.scalatest._
 import scalikejdbc.ConnectionPool
 import service.FileInfoService
-import service.elasticsearch.{IndexService, MappingService}
-import service.elasticsearch.db.DbIndexService
-import service.elasticsearch.es.EsIndexService
 import services.AppUserService
 import viewmodels.VmDocumentFile
 

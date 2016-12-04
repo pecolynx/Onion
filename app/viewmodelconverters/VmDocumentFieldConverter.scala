@@ -1,6 +1,6 @@
 package viewmodelconverters
 
-import models.elasticsearch.es.{EsDocumentField, EsDocumentFieldEmpty, EsDocumentFieldString}
+import com.kujilabo.models.elasticsearch.es.{EsDocumentField, EsDocumentFieldEmpty, EsDocumentFieldString}
 import viewmodels.VmDocumentField
 
 object VmDocumentFieldConverter {

@@ -2,21 +2,19 @@ package controllers
 
 import com.google.inject.{Guice, Injector}
 import com.kujilabo.models.core.VariableName
+import com.kujilabo.models.elasticsearch._
+import com.kujilabo.models.elasticsearch.db.DbFieldType.DbFieldTypeText
+import com.kujilabo.models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji
+import com.kujilabo.models.elasticsearch.es.EsFieldFormat.EsFieldFormatNone
+import com.kujilabo.models.elasticsearch.es.EsFieldType.EsFieldTypeString
+import com.kujilabo.service.elasticsearch.{IndexService, MappingService}
+import com.kujilabo.service.elasticsearch.db.DbIndexService
+import com.kujilabo.service.elasticsearch.es.EsIndexService
 import config.{ServiceModule, TestServiceModule}
 import models.AppSettingsTestImpl
-import models.core.Title
-import models.elasticsearch.db.DbFieldType.DbFieldTypeText
-import models.elasticsearch.es.{EsDocument, EsDocumentFieldList, EsDocumentFieldString}
-import models.elasticsearch.es.EsFieldAnalyzer.EsFieldAnalyzerKuromoji
-import models.elasticsearch.es.EsFieldFormat.EsFieldFormatNone
-import models.elasticsearch.es.EsFieldType.EsFieldTypeString
-import models.elasticsearch.{MappingName, _}
 import org.scalatest._
 import scalikejdbc.scalatest.AutoRollback
 import scalikejdbc.{ConnectionPool, NamedDB}
-import service.elasticsearch.{IndexService, MappingService}
-import service.elasticsearch.db.DbIndexService
-import service.elasticsearch.es.{EsDocumentService, EsIndexService}
 import viewmodels.file.VmFileSearchParameter
 
 class DocumentControllerTest extends FunSpec with BeforeAndAfter with

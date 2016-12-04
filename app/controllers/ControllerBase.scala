@@ -1,15 +1,15 @@
 package controllers
 
+import com.kujilabo.common.ModelNotFoundException
 import com.typesafe.scalalogging.LazyLogging
-import models.elasticsearch.es.EsDocument
 import models.exceptions._
 import play.api.mvc.{AnyContent, Controller, Request, Result}
 import service.AppUserAuthTokenService
 import services.AppUserService
-import utils.JsonUtils
-import models.core._
 import com.kujilabo.models.core._
-import models.core._
+import com.kujilabo.models.elasticsearch.es.EsDocument
+import com.kujilabo.util.JsonUtils
+import models.core.{AppUser, AppUserAuthToken}
 
 /**
   * 基底コントローラ。

@@ -1,14 +1,13 @@
 package service
 
+import com.kujilabo.common.ModelNotFoundException
 import com.typesafe.scalalogging.LazyLogging
 import models.core._
-import models.exceptions.ModelNotFoundException
 import org.joda.time.DateTime
 import scalikejdbc._
 import services.AppUserService._
 
 import scala.util.Try
-
 import com.kujilabo.models.core._
 
 object FileInfoService extends SQLSyntaxSupport[FileInfo] with LazyLogging {

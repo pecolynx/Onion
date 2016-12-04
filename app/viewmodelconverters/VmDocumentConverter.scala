@@ -2,9 +2,8 @@ package viewmodelconverters
 
 import models.core._
 import com.kujilabo.models.core._
-import models.elasticsearch.es.custom.EsMappingFile
-import models.elasticsearch.{IndexName, MappingName}
-import models.elasticsearch.es.{EsDocument, EsDocumentFieldList, EsDocumentFieldString, EsMapping}
+import com.kujilabo.models.elasticsearch.es.EsDocument
+import com.kujilabo.models.elasticsearch.{IndexName, MappingName, Title}
 import org.joda.time.DateTime
 import viewmodels.{VmDocument, VmDocumentFile}
 

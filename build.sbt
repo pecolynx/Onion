@@ -4,11 +4,14 @@ version := "1.0"
 
 lazy val common = (project in file("modules/common"))
 lazy val http = (project in file("modules/http"))
+lazy val elasticsearch = (project in file("modules/elasticsearch"))
+  .aggregate(common, http)
+  .dependsOn(common, http)
 
 lazy val `onion` = (project in file("."))
   .enablePlugins(PlayScala)
-  .aggregate(common, http)
-  .dependsOn(common, http)
+  .aggregate(common, http, elasticsearch)
+  .dependsOn(common, http, elasticsearch)
 
 scalaVersion := "2.11.7"
 

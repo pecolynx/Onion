@@ -1,7 +1,7 @@
 package viewmodelconverters
 
-import models.core.Page
-import models.elasticsearch.FileSearchCondition
+import com.kujilabo.models.core.Page
+import com.kujilabo.models.elasticsearch.FileSearchCondition
 import viewmodels.file.VmSearchCondition
 
 /**

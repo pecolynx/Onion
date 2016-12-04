@@ -1,6 +1,6 @@
 package viewmodelconverters
 
-import models.elasticsearch.SearchResult
+import com.kujilabo.models.elasticsearch.SearchResult
 import viewmodels.VmSearchResult
 
 /**

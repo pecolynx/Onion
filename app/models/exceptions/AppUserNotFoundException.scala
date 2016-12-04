@@ -1,5 +1,7 @@
 package models.exceptions
 
+import com.kujilabo.common.ModelNotFoundException
+
 /**
   * アプリケーションユーザが見つからない例外。
   *

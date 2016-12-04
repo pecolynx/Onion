@@ -1,5 +1,7 @@
 package models.exceptions
 
+import com.kujilabo.common.ModelNotFoundException
+
 class DocumentNotFoundException
 (
   message: String,

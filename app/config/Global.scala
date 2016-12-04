@@ -4,19 +4,19 @@ import javax.inject.Inject
 
 import akka.actor.ActorSystem
 import com.google.inject.AbstractModule
+import com.kujilabo.models.elasticsearch.db.DbFieldType.DbFieldTypeText
+import com.kujilabo.models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
+import com.kujilabo.models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}
+import com.kujilabo.models.elasticsearch.es.EsFieldType.{EsFieldTypeDate, EsFieldTypeInteger, EsFieldTypeString}
+import com.kujilabo.models.elasticsearch.es.custom.EsMappingFile
+import com.kujilabo.models.elasticsearch.{Field, FieldList, Index, Mapping}
+import com.kujilabo.service.elasticsearch.{IndexService, MappingService}
+import com.kujilabo.service.elasticsearch.db.DbIndexService
+import com.kujilabo.service.elasticsearch.es.EsIndexService
 import com.typesafe.scalalogging.LazyLogging
 import models.AppSettingsImpl
-import models.elasticsearch.db.DbFieldType.DbFieldTypeText
-import models.elasticsearch.es.EsFieldAnalyzer.{EsFieldAnalyzerKuromoji, EsFieldAnalyzerNone}
-import models.elasticsearch.es.EsFieldFormat.{EsFieldFormatDateOptionalTime, EsFieldFormatNone}
-import models.elasticsearch.es.EsFieldType.{EsFieldTypeDate, EsFieldTypeInteger, EsFieldTypeString}
-import models.elasticsearch.es.custom.EsMappingFile
-import models.elasticsearch.{Field, FieldList, Index, Mapping}
 import play.api.inject.ApplicationLifecycle
 import scalikejdbc.ConnectionPool
-import service.elasticsearch.{IndexService, MappingService}
-import service.elasticsearch.db.DbIndexService
-import service.elasticsearch.es.EsIndexService
 
 //@Singleton
 class Global @Inject()(system: ActorSystem, lifecycle: ApplicationLifecycle) extends LazyLogging {
